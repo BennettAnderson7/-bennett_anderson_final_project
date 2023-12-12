@@ -14,3 +14,17 @@ class Tile(pygame.sprite.Sprite):
         #self.image.fill('green')
         self.image = pygame.image.load(os.path.join(img_folder, 'mario_grass_tile.png')).convert()
         self.rect = self.image.get_rect(topleft = pos)
+
+    # update side scrolling
+    def update(self, x_shift):
+        self.rect.x += x_shift
+
+
+class Tile2(pygame.sprite.Sprite):
+    def __init__(self,pos,size):
+        super().__init__()
+        self.image = pygame.Surface((size,size))
+        #self.image.fill('green')
+        self.image = pygame.image.load(os.path.join(img_folder, 'ex_grass_tile.png')).convert()
+        self.rect = self.image.get_rect(topleft = pos)
+
