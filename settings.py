@@ -17,3 +17,4 @@ screen_height = len(level_map) * tile_size
 SKY = (115, 255, 255)
 BLUE = (0, 0, 255)
 RED = (255, 0, 0)
+BLACK = (0,0,0)

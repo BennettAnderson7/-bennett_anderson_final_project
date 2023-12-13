@@ -28,7 +28,7 @@ while True:
             pygame.quit()
             sys.exit()
 
-    screen.fill(SKY)
+    screen.fill(BLACK)
     #test_tile.draw(screen)
     level.run()
 
