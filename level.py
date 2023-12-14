@@ -22,8 +22,11 @@ class Level:
                 if cell == 'X':
                     tile = Tile((x,y),tile_size)
                     self.tiles.add(tile)
-                if cell == 'B':
+                if cell == 'D':
                     tile = Tile2((x,y),tile_size)
+                    self.tiles.add(tile)
+                if cell == 'B':
+                    tile = Tile3((x,y),tile_size)
                     self.tiles.add(tile)
                 if cell == 'P':
                     player_sprite = Player((x,y))
