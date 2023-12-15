@@ -28,6 +28,9 @@ class Level:
                 if cell == 'B':
                     tile = Tile3((x,y),tile_size)
                     self.tiles.add(tile)
+                if cell == 'R':
+                    tile = Tile4((x,y),tile_size)
+                    self.tiles.add(tile)
                 if cell == 'P':
                     player_sprite = Player((x,y))
                     self.player.add(player_sprite)
@@ -40,7 +43,7 @@ class Level:
         if player_x < screen_width / 4 and direction_x < 0:
             self.world_shift = 8
             player.speed = 0
-        elif player_x > screen_width - (screen_width / 4) and direction_x > 0:
+        elif player_x > screen_width - (screen_width / 1.5) and direction_x > 0:
             self.world_shift = -8
             player.speed = 0
         else:

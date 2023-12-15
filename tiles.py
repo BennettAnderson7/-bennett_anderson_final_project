@@ -32,11 +32,24 @@ class Tile2(pygame.sprite.Sprite):
         self.rect.x += x_shift
 
 class Tile3(pygame.sprite.Sprite):
+
     def __init__(self,pos,size):
         super().__init__()
         self.image = pygame.Surface((size,size))
         #self.image.fill('green')
         self.image = pygame.image.load(os.path.join(img_folder, 'mario_qblock.png')).convert()
+        self.rect = self.image.get_rect(topleft = pos)
+
+    # update side scrolling
+    def update(self, x_shift):
+        self.rect.x += x_shift
+
+class Tile4(pygame.sprite.Sprite):
+    def __init__(self,pos,size):
+        super().__init__()
+        self.image = pygame.Surface((size,size))
+        #self.image.fill('green')
+        self.image = pygame.image.load(os.path.join(img_folder, 'mario_brick_block.png')).convert()
         self.rect = self.image.get_rect(topleft = pos)
 
     # update side scrolling

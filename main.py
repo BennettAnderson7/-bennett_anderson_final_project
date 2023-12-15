@@ -1,10 +1,13 @@
-# File created by: Bennett Anderson
+# File created by: Bennett Anderson 12/14/23
 
-# Project Title: "(Name TBD) Platformer"
+# content from kids can code: http://kidscancode.org/blog/
+# content from Clear Code: https://www.youtube.com/@ClearCode
+
+# Project Title: "Platformer"
 
 '''
 Goals:
-- Create a mario style platformer 
+- Create a mario style platformer based on tiles
 - Include side scrolling, powerups, mobs, challenges, and levels
 - Implement textures and sounds
 - Have it work perfectly based on my limited knowledge
