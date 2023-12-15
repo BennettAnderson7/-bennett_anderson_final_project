@@ -1,3 +1,5 @@
+# define level map via tile system
+# tile system represented via differing letters
 level_map = (
 '................................................................................................................',
 '................................................................................................................',
@@ -11,9 +13,14 @@ level_map = (
 '......P............XD..DX..........XXDD.........................DDDDDDDDD..DDDDDDDDD.....XXXXXXXXXXXXXXXXXXXXXX.',
 '..XXXXXXXXXXXXXXXXXDD..DDXXXXXXXXXXDDDD.........................DDDDDDDDD..DDDDDDDDD.....DDDDDDDDDDDDDDDDDDDDDD.')
 
+# define tile dimensions
 tile_size = 64
+
+# define screen dimensions
 screen_width = 1200
 screen_height = len(level_map) * tile_size
+
+# define colors
 SKY = (115, 255, 255)
 BLUE = (0, 0, 255)
 RED = (255, 0, 0)
